@@ -1,19 +1,18 @@
-body{
+*{
   margin: 0%;
 }
 
 /* header css */
 #header{
-  color: white;
-  background-color: rgb(47, 4, 111);
-  height: 70%;
+  color: rgb(45, 41, 41)  ;
+  height: max-content;
+  background: radial-gradient(#afccae, #b6b885, #62965a);
   width: 100%;
 }
 #name{
-  font-size: 20px;
+  font-size: 28px;
   font-family:monotype corsiva;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 10px;
 }
 .blink{
   animation: blink 0.5s linear infinite;
@@ -56,21 +55,20 @@ body{
   font-size: 30px;
   padding: 10px ;
 }
-#header-images{
-  height: max-content;
-  width:fit-content;
+.header-images{
+  height: fit-content;
+  width: fit-content;
   padding: 10px;
+}
+.header-images img:hover{
+  transform: scale(1.1);
+  z-index: 1;
 }
 .header-image{
   width: 300px;
   height: 220px;
-  padding: 25px;
-  box-shadow: 0 0 20px 2px rgb(36, 61, 66);
+  padding: 28px;
 	transition: 1s;
-}
-#header-images img:hover{
-  transform: scale(1.1);
-	z-index: 1;
 }
 
 /* content css */
@@ -78,9 +76,15 @@ body{
   background-color: rgb(225, 222, 208);
   padding: 20px;
 }
+.center-heading{
+  color: #197b08;
+  font-size: 28px;
+}
 .side-headings{
-  color: rgb(15, 117, 34);
+  color: rgb(46, 157, 102);
   font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 2px;
+  font-style: italic;
   margin-bottom: 0%;
 }
 ul{
@@ -98,38 +102,28 @@ hr {
   padding: 4px;
   font-size: 20px;
 }
+#intro-images{
+  text-align: center;
+}
+.intro-images{
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
 .cotent-images{
-  width: 300px;
-  height: 220px;
+  width: 400px;
+  height: 300px;
   border-radius: 5px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  animation: borderAnimation1  1s infinite;
+  padding: 15px;
 }
 .cotent-images:hover{
-  border: 3px solid;
   transition: 1s;
   transform: scale(1.1);
 	z-index: 1;
 }
-@keyframes borderAnimation1 {
-  0%{
-    border-color: red;
-  }
-  25%{
-    border-color: rgb(239, 12, 217);
-  }
-  50%{
-      border-color: rgb(231, 132, 11);
-  }
-  100%{
-    border-color: green;
-  }
-}
 #bottom{
   height: 425px;
+  width: 300px;
 }
 table{
   width: fit-content;
@@ -149,7 +143,7 @@ table,td,th{
   text-align: center;
 }
 td{
-  font-size: larger;
+  font-size: 23px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 th#main{
